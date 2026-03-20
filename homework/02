@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <h2>問卷調查表</h2>
+
+    <!-- 姓名 -->
+    <label for="name">姓名</label>
+    <input type="text" id="name" name="name" placeholder="請輸入姓名" required>
+
+    <!-- 電子郵件 -->
+    <label for="email">電子郵件</label>
+    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+    <!-- 電話 -->
+    <label for="phone">電話</label>
+    <input type="tel" id="phone" name="phone" placeholder="0912-345-678">
+
+    <!-- 性別 -->
+    <label>性別</label>
+    <div class="radio-group">
+        <label><input type="radio" name="gender" value="male"> 男</label>
+        <label><input type="radio" name="gender" value="female"> 女</label>
+        <label><input type="radio" name="gender" value="other"> 其他</label>
+    </div>
+
+    <!-- 興趣愛好 -->
+    <label for="hobby">興趣愛好</label>
+    <input type="text" id="hobby" name="hobby" placeholder="例如：閱讀、運動">
+
+    <!-- 工作 -->
+    <label for="job">工作</label>
+    <select id="job" name="job">
+        <option value="student">學生</option>
+        <option value="office">上班族</option>
+        <option value="freelancer">自由業</option>
+        <option value="other">其他</option>
+    </select>
+
+    <!-- 出生日期 -->
+    <label for="birthday">出生日期</label>
+    <input type="date" id="birthday" name="birthday">
+
+    <!-- 喜歡的顏色 -->
+    <label for="color">喜歡的顏色</label>
+    <input type="color" id="color" name="color">
+
+    <!-- 滿意度 (range) -->
+    <label for="satisfaction">滿意度 (1-10)</label>
+    <input type="range" id="satisfaction" name="satisfaction" min="1" max="10">
+
+    <!-- 上傳檔案 -->
+    <label for="file">上傳檔案</label>
+    <input type="file" id="file" name="file">
+
+    <!-- 留言 -->
+    <label for="message">留言</label>
+    <textarea id="message" name="message" rows="4" placeholder="請輸入您的意見..."></textarea>
+
+    <!-- 按鈕 -->
+    <button type="submit">送出</button>
+    <button type="reset">重設</button>
+
+</form>
+
+</body>
+</html>
