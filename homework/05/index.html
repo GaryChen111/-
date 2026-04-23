@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>簡單網誌</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+    header { border-bottom: 2px solid #333; padding-bottom: 20px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
+    h1 a { text-decoration: none; color: #333; }
+    .btn { background: #333; color: #fff; padding: 8px 16px; text-decoration: none; border-radius: 4px; }
+    .post { border-bottom: 1px solid #ddd; padding: 20px 0; }
+    .post h2 a { color: #333; text-decoration: none; }
+    .post h2 a:hover { color: #666; }
+    .date { color: #888; font-size: 0.9em; }
+    .content { margin-top: 10px; }
+    .actions { margin-top: 10px; }
+    .actions a, .actions button { margin-right: 10px; color: #666; text-decoration: none; font-size: 0.9em; }
+    .actions button { background: #dc3545; color: #fff; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; }
+    .post-content { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="/">簡單網誌</a></h1>
+    <a href="/post/new" class="btn">發布文章</a>
+  </header>
+  <main>
+    <% if (posts.length === 0) { %>
+      <p>還沒有文章，<a href="/post/new">發布第一篇</a>吧！</p>
+    <% } else { %>
+      <% posts.forEach(post => { %>
+        <article class="post">
+          <h2><a href="/post/<%= post.id %>"><%= post.title %></a></h2>
+          <p class="date"><%= new Date(post.created_at).toLocaleString('zh-TW') %></p>
+          <div class="content"><%= post.content.substring(0, 150) %><%= post.content.length > 150 ? '...' : '' %></div>
+          <div class="actions">
+            <a href="/post/<%= post.id %>">閱讀更多</a>
+            <form action="/post/<%= post.id %>/delete" method="POST" style="display:inline;">
+              <button type="submit" onclick="return confirm('確定要刪除嗎？')">刪除</button>
+            </form>
+          </div>
+        </article>
+      <% }) %>
+    <% } %>
+  </main>
+</body>
+</html>
