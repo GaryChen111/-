@@ -75,11 +75,3 @@ basketball-game/
 - 平板裝置
 
 包含觸控按鈕操作。
-
-
-
-
-# 👨‍💻 作者
-
-Basketball Shooting Game  
-Made with HTML + JavaScript
