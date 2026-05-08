@@ -1,0 +1,58 @@
+body {
+}
+
+#startScreen,
+#gameOver {
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#startBtn {
+  background: orange;
+  color: white;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+canvas {
+  background: #f4f4f4;
+  border: 4px solid black;
+  max-width: 95%;
+}
+
+.mobileControls {
+  margin-top: 15px;
+}
+
+.mobileControls button {
+  width: 90px;
+  height: 90px;
+  font-size: 30px;
+}
+
+.leaderboard {
+  margin-top: 20px;
+}
+
+ol {
+  display: inline-block;
+  text-align: left;
+}
