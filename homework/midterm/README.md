@@ -30,6 +30,38 @@ basketball-game/
 ├── script.js
 
 ```
+---
+
+# 🚀 如何執行
+
+## 方法 1：直接開啟
+
+直接雙擊：
+
+```txt
+index.html
+```
+
+即可在瀏覽器中遊玩。
+
+---
+
+## 方法 2：VS Code + Live Server（推薦）
+
+### 安裝：
+
+- VS Code
+- Live Server Extension
+
+### 開啟方式：
+
+右鍵 `index.html`
+
+選擇：
+
+```txt
+Open with Live Server
+```
 
 ---
 
@@ -75,3 +107,5 @@ basketball-game/
 - 平板裝置
 
 包含觸控按鈕操作。
+# 補充
+- 沒有音效
