@@ -27,9 +27,6 @@ basketball-game/
 ├── index.html
 ├── style.css
 ├── script.js
-├── score.wav
-├── shoot.wav
-│
 └── server/
     ├── server.js
     ├── scores.json
