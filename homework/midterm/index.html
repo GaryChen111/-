@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏀 投籃遊戲</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="startScreen">
+  <h1>🏀 投籃高手</h1>
+  <button id="startBtn">開始遊戲</button>
+</div>
+
+<div id="gameUI" class="hidden">
+
+  <div class="topBar">
+    <div id="score">分數：0</div>
+    <div id="combo">Combo：0</div>
+    <div id="timer">時間：60</div>
+  </div>
+
+  <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+  <div class="mobileControls">
+    <button id="leftBtn">⬅️</button>
+    <button id="shootBtn">🏀</button>
+    <button id="rightBtn">➡️</button>
+  </div>
+
+  <div class="leaderboard">
+    <h2>🏆 排行榜</h2>
+    <ol id="leaderboardList"></ol>
+  </div>
+
+</div>
+
+<div id="gameOver" class="hidden">
+  <h1>⏰ 遊戲結束</h1>
+  <h2 id="finalScore"></h2>
+  <button onclick="location.reload()">再玩一次</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
