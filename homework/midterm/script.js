@@ -18,6 +18,18 @@ const canvas = document.getElementById("gameCanvas");
   ctx.fillStyle = "orange";
   ctx.fill();
   ctx.closePath();
+// 上傳分數到 server
+async function uploadScore(name, score) {
+  await fetch("http://localhost:3000/score", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ name, score })
+  });
+
+  loadOnlineLeaderboard();
+}
 }
 
 function gameLoop() {
