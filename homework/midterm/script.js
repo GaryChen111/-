@@ -71,5 +71,22 @@ function loadLeaderboard() {
     list.appendChild(li);
   });
 }
+async function loadOnlineLeaderboard() {
+  const res = await fetch("http://localhost:3000/scores");
+  const data = await res.json();
 
+  const list = document.getElementById("leaderboardList");
+  list.innerHTML = "";
+
+  data.forEach(item => {
+    const li = document.createElement("li");
+    li.innerText = `${item.name} - ${item.score}`;
+    list.appendChild(li);
+  });
+}
 loadLeaderboard();
+let name = prompt("輸入名字：");
+
+if (name) {
+  uploadScore(name, score);
+}
