@@ -69,7 +69,7 @@
 
 
 
-
+-------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -141,10 +141,9 @@
 
 </body>
 </html>
-說明:這是一份問卷調查表
+說明:這是一份有各種輸入控制項，例如登入表單，註冊表單的問卷調查表單
 
-
-
+-------------------------------------------------------------------------------------------------------------
 
 
 
@@ -152,38 +151,10 @@
 程式:
 console.log('hello 你好')
 說明:
-這是一個JavaScript 程式
+這是一個JavaScript 程式 ( hello.js)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+--------------------------------------------------------------------------------------------------------------
 
 
 習題 4 -- 請寫 10 個 javascript 程式練習
@@ -311,105 +282,31 @@ for (let i = 0; i < students.length; i++) {
 }
 
 console.log("=== JavaScript 綜合程式結束 ===");
-說明:這是10題的javascript 程式練習
+說明:這是10題的javascript 程式練習，裡面包含 if, for, while , function, json, array, object
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+----------------------------------------------------------------------------------------------------------------
 
 
 習題 5 -- 請用 opencode 做一個網站專案，分版本，全部交上來
 此習題用opencode製作
 程式(因為程式碼太長，所以丟專案上來)
 https://github.com/GaryChen111/_wp/tree/master/homework/05
-說明:這是一個使用opencode製作的Blog專案，但是做到後面發現無法分版本，然後我不會做這個的README.MD
+說明:這是一個使用opencode製作的Blog專案，但是做到後面發現我不會分版本，然後我不會做這個的README.MD
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-------------------------------------------------------------------------------------------------------------------
 
 習題 6 -- 請寫出以下 10 題有關 JavaScript 函數與參數的練習解答
 此習題我用chatgpt做的，我有參考同學的read.md的排版，但程式是AI的。
 https://chatgpt.com/share/6a0fcd85-d32c-8320-ab5c-31c4cd7927a1
 程式(因為程式碼太長，所以丟專案上來)
 https://github.com/GaryChen111/_wp/tree/master/homework/06.
-說明: 10 題有關 JavaScript 函數與參數的練習解答
+說明: 這是10 題有關 JavaScript 函數與參數的練習解答
+裡面包含Callback 基礎實作， 匿名函數與立即執行 (IIFE)，箭頭函數與陣列轉換，陣列參數的「破壞性修改」
+， 函數回傳函數 (Higher-Order Function)，Callback 篩選器，箭頭函數處理物件，參數傳址陷阱：重新賦值 vs 修改，
+延遲執行的 Callback，綜合應用：計算總價。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---------------------------------------------------------------------------------------------------------------------------------
 
 
 習題 7 --請寫出以下 10 題 JavaScript 練習 (這是看懂 Blog 網誌範例的關鍵)
@@ -418,44 +315,19 @@ https://chatgpt.com/share/69be31da-d040-8008-b3ae-c0c162e54782
 程式(因為程式碼太長，所以丟專案上來)
 https://github.com/GaryChen111/_wp/tree/master/homework/07
 說明:這是10 題 JavaScript 練習
+裡面包含 物件屬性存取 (Object Property Access)，物件解構賦值 (Object Destructuring)，陣列的遍歷與字串拼接 (Array forEach & Template Literals)，
+ 字典與動態參數 (URL Params / Dictionary)， Callback 函數傳參 (Passing Data via Callbacks)，JSON 處理 (Parsing JSON)，模擬資料庫查詢 (Simulating DB Queries)，
+樣板字串中的邏輯運算 (Template Literals with Logic)，陣列物件的排序與切片 (Sort & Substring)，錯誤優先回呼模式 (Error-First Callback Pattern)。
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+----------------------------------------------------------------------------------------------------------------------------------------
 
 期中作業
 此習題我用chatgpt做的
 https://chatgpt.com/share/69fd4dc9-2be8-8320-8afc-881fffd76ad6
 專案連結
 https://github.com/GaryChen111/_wp/tree/master/homework/midterm
-
+說明:這是一個投籃小遊戲
 程式介紹:
  # 🏀 Basketball Shooting Game
 
